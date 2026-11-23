@@ -1,13 +1,14 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:GameClientApp.ViewModels"
+        xmlns:vm="using:GameClientApp.ViewModels.Login"
         xmlns:views="using:GameClientApp.Views"
+        xmlns:login="clr-namespace:GameClientApp.ViewModels.Login"
         x:Class="GameClientApp.Views.LoginWindow"
         x:DataType="vm:LoginWindowViewModel"
         Title="Login" Classes="login">
 
     <Window.DataTemplates>
-        <DataTemplate DataType="vm:LoginViewModel">
+        <DataTemplate DataType="login:LoginViewModel">
             <views:LoginView />
         </DataTemplate>
         <DataTemplate DataType="vm:RegisterViewModel">

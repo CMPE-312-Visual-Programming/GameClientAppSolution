@@ -1,8 +1,9 @@
 using System;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using GameClientApp.ViewModels.Base;
 
-namespace GameClientApp.ViewModels;
+namespace GameClientApp.ViewModels.Login;
 
 public partial class RegisterViewModel : ViewModelBase
 {

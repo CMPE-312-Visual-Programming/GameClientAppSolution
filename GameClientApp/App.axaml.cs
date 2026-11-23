@@ -1,7 +1,8 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using GameClientApp.ViewModels;
+using GameClientApp.ViewModels.Main;
+using GameClientApp.ViewModels.Login;
 using GameClientApp.Views;
 
 namespace GameClientApp;

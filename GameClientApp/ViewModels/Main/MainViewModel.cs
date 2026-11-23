@@ -1,6 +1,7 @@
 using CommunityToolkit.Mvvm.ComponentModel;
+using GameClientApp.ViewModels.Base;
 
-namespace GameClientApp.ViewModels;
+namespace GameClientApp.ViewModels.Main;
 
 public partial class MainViewModel : ViewModelBase
 {
