@@ -3,6 +3,7 @@
         xmlns:vm="using:GameClientApp.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:GameClientApp.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="GameClientApp.Views.MainWindow"
         x:DataType="vm:MainViewModel"
@@ -14,9 +15,14 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainViewModel />
     </Design.DataContext>
+    
+    <DockPanel>
+        <views:CustomTitleBar DockPanel.Dock="Top" />
+        <TextBox Text="{Binding Greeting}"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center" />
+    </DockPanel>
 
-    <TextBox Text="{Binding Greeting}"
-             HorizontalAlignment="Center"
-             VerticalAlignment="Center" />
+    
 
 </Window>

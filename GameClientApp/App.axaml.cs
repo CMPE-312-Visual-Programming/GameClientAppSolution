@@ -17,10 +17,26 @@ public partial class App : Application
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            desktop.MainWindow = new MainWindow
+            LoginWindow? loginWindow = null;
+
+            void SwitchToMainWindow()
             {
-                DataContext = new MainViewModel(),
+                var mainWindow = new MainWindow
+                {
+                    DataContext = new MainViewModel()
+                };
+
+                desktop.MainWindow = mainWindow;
+                mainWindow.Show();
+                loginWindow?.Close();
+            }
+
+            loginWindow = new LoginWindow
+            {
+                DataContext = new LoginWindowViewModel(SwitchToMainWindow)
             };
+
+            desktop.MainWindow = loginWindow;
         }
 
         base.OnFrameworkInitializationCompleted();

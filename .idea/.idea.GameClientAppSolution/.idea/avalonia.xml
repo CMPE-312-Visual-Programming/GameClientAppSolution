@@ -3,7 +3,13 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="GameClientApp/App.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Styles/WindowStyle.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Views/CustomTitleBar.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Views/LoginView.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Views/LoginWindow.axaml" value="GameClientApp/GameClientApp.csproj" />
         <entry key="GameClientApp/Views/MainWindow.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Views/RegisterView.axaml" value="GameClientApp/GameClientApp.csproj" />
       </map>
     </option>
   </component>

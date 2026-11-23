@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:GameClientApp.ViewModels"
+        xmlns:views="using:GameClientApp.Views"
+        x:Class="GameClientApp.Views.LoginWindow"
+        x:DataType="vm:LoginWindowViewModel"
+        Title="Login" Classes="login">
+
+    <Window.DataTemplates>
+        <DataTemplate DataType="vm:LoginViewModel">
+            <views:LoginView />
+        </DataTemplate>
+        <DataTemplate DataType="vm:RegisterViewModel">
+            <views:RegisterView />
+        </DataTemplate>
+    </Window.DataTemplates>
+    
+    <DockPanel>
+        <views:CustomTitleBar DockPanel.Dock="Top" />
+        <ContentControl Content="{Binding CurrentView}" Margin="20" />
+    </DockPanel>
+
+   
+</Window>
