@@ -1,26 +1,35 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:GameClientApp.ViewModels.Main"
+        xmlns:vmusers="using:GameClientApp.ViewModels.Users"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewsusers="clr-namespace:GameClientApp.Views.Users"
         xmlns:views="clr-namespace:GameClientApp.Views"
+        xmlns:main="clr-namespace:GameClientApp.ViewModels.Main"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="GameClientApp.Views.MainWindow"
-        x:DataType="vm:MainViewModel"
+        x:DataType="main:MainViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="GameClientApp">
-
-    <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainViewModel />
-    </Design.DataContext>
+    
+    <Window.DataTemplates>
+        <DataTemplate DataType="vmusers:SuperAdminViewModel">
+            <viewsusers:SuperAdminView />
+        </DataTemplate>
+        <DataTemplate DataType="vmusers:AdminViewModel">
+            <viewsusers:AdminView />
+        </DataTemplate>
+        <DataTemplate DataType="vmusers:DeveloperViewModel">
+            <viewsusers:DeveloperView />
+        </DataTemplate>
+        <DataTemplate DataType="vmusers:ClientViewModel">
+            <viewsusers:ClientView />
+        </DataTemplate>
+    </Window.DataTemplates>
     
     <DockPanel>
         <views:CustomTitleBar DockPanel.Dock="Top" />
-        <TextBox Text="{Binding Greeting}"
-                 HorizontalAlignment="Center"
-                 VerticalAlignment="Center" />
+        <ContentControl Content="{Binding CurrentView}" />
     </DockPanel>
 
     

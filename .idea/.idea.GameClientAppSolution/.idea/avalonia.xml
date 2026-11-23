@@ -6,10 +6,16 @@
         <entry key="GameClientApp/App.axaml" value="GameClientApp/GameClientApp.csproj" />
         <entry key="GameClientApp/Styles/WindowStyle.axaml" value="GameClientApp/GameClientApp.csproj" />
         <entry key="GameClientApp/Views/CustomTitleBar.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Views/Login/RegisterView.axaml" value="GameClientApp/GameClientApp.csproj" />
         <entry key="GameClientApp/Views/LoginView.axaml" value="GameClientApp/GameClientApp.csproj" />
         <entry key="GameClientApp/Views/LoginWindow.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Views/Main/MainWindow.axaml" value="GameClientApp/GameClientApp.csproj" />
         <entry key="GameClientApp/Views/MainWindow.axaml" value="GameClientApp/GameClientApp.csproj" />
         <entry key="GameClientApp/Views/RegisterView.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Views/Users/AdminView.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Views/Users/ClientView.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Views/Users/DeveloperView.axaml" value="GameClientApp/GameClientApp.csproj" />
+        <entry key="GameClientApp/Views/Users/SuperAdminView.axaml" value="GameClientApp/GameClientApp.csproj" />
       </map>
     </option>
   </component>
